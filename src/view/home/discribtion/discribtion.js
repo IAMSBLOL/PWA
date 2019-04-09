@@ -17,7 +17,8 @@ class Discribtion extends Component {
             <div styleName='discribtion' className='discribtion'>
                 discribtiona
                 {home}
-                {saga}
+                {saga}asd
+                <img src='http://pic29.nipic.com/20130601/12122227_123051482000_2.jpg' />
             </div>
         );
     }
