@@ -517,6 +517,10 @@ module.exports = function (webpackEnv) {
                     from: path.join(paths.appSrc, 'view/home/resume/canvas.js'),
                     to: './public'
                 },
+                {
+                    from: path.join(paths.appPublic, 'sw-eudemonia.js'),
+                    to: './public'
+                },
             ]),
             // Generates an `index.html` file with the <script> injected.
             new HtmlWebpackPlugin(
@@ -590,13 +594,13 @@ module.exports = function (webpackEnv) {
             // See https://github.com/facebook/create-react-app/issues/186
             isEnvDevelopment &&
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
-            isEnvProduction &&
-        new MiniCssExtractPlugin({
+            // isEnvProduction &&
+            new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: 'static/css/[name].[contenthash:8].css',
-            chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
-        }),
+                filename: 'static/css/[name].[contenthash:8].css',
+                chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+            }),
             // Generate a manifest file which contains a mapping of all asset filenames
             // to their corresponding output file so that tools can pick it up without
             // having to parse `index.html`.
@@ -630,6 +634,7 @@ module.exports = function (webpackEnv) {
                 // public/ and not a SPA route
                 new RegExp('/[^/]+\\.[^/]+$'),
             ],
+            // swDest: 'sw-eudemonia.js'
         }),
             // TypeScript type checking
             useTypeScript &&
