@@ -12,18 +12,23 @@ class Navigation extends Component {
                 <Layout className='layout'>
                     <Header>
                         <div className='logo' />
-                        <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['2']} style={{ lineHeight: '64px' }}
+                        <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['1']} style={{ lineHeight: '64px' }}
                         >
                             <Menu.Item key='1'>
-                                <NavLink to='/home/resume' activeClassName='selected'>
+                                <NavLink to='/home/resume' exact activeClassName='selected'>
                                     resume
                                 </NavLink>
                             </Menu.Item>
                             <Menu.Item key='2'>
-                                <NavLink to='/home/discribtion' activeClassName='selected'>
+                                <NavLink to='/home/discribtion' exact activeClassName='selected'>
                                     discribtion
                                 </NavLink></Menu.Item>
-                            <Menu.Item key='3'>nav 3</Menu.Item>
+                            <Menu.Item key='3'>
+
+                                <NavLink to='/home/resume/discribtion' exact activeClassName='selected'>
+                            /home/resume/discribtion
+                                </NavLink>
+                            </Menu.Item>
                         </Menu>
                     </Header>
                 </Layout>
