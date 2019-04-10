@@ -1,15 +1,13 @@
-.Navigation {
+.Layout {
     width: 100%;
-    position: sticky;
-    z-index: 99;
-    top: 0; /* 阈值 */
+    height: 100%;
 
     :global {
         .fucking {
             // animation: App-logo-spin infinite 20s linear;
             height: 40vmin;
             pointer-events: none;
-            background-color: gold;
+            background-color: rebeccapurple;
         }
     }
 }

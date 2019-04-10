@@ -26,7 +26,7 @@ var S = {
             console.warn(decodeURI(action).substring(i + 3))
         } else {
             // 2017|2018|一年了|纪念日|#image https://dev-cjtlis.eudemonia.ecaicn.com:8888/public/born_logo.svg'
-            S.UI.simulate('welcome|eudemonia');
+            S.UI.simulate('welcome|I am|eudemonia');
         }
 
         S.Drawing.loop(function () {

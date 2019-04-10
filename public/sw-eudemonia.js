@@ -15,8 +15,8 @@
 var dataCacheName = 'sw-v1';
 var cacheName = 'sw-eudemonia';
 var filesToCache = [
-    '.',
-    '/static/js',
+    // '.',
+    // '/static/js',
 
 ];
 
