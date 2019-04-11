@@ -6,9 +6,9 @@ import Navigation from '../../../container/navigation'
 // import { createBrowserHistory } from 'history'
 // const history = createBrowserHistory()
 class Layout extends Component {
-    componentDidMount () {
-        this.props.history.push('/home/resume', { some: 'state' });
-    }
+    // componentDidMount () {
+    //     this.props.history.push('/home/resume', { some: 'state' });
+    // }
     match=() => {
         console.log(this.props)
         const { route } = this.props
