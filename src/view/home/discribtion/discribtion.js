@@ -15,7 +15,7 @@ class Discribtion extends Component {
         const { home, saga } = this.props
         return (
             <div styleName='discribtion' className='discribtion'>
-                discribtiona
+                discribtionaasdasdasdasda44646464646
                 {home}
                 {saga}asd
                 <img src='http://pic29.nipic.com/20130601/12122227_123051482000_2.jpg' />

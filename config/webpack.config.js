@@ -623,7 +623,7 @@ module.exports = function (webpackEnv) {
             // Generate a service worker script that will precache, and keep up to date,
             // the HTML & assets that are part of the Webpack build.
             // 集成的pwa。尼玛的自定义怎么搞啊，老子不要框架，要原生
-            // isEnvProduction &&
+            isEnvProduction &&
             new WorkboxWebpackPlugin.GenerateSW({
                 swDest: 'sw-eudemonia.js',
                 clientsClaim: true,
